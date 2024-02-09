@@ -1,0 +1,962 @@
+@font-face {
+    font-family: barlowRegular;
+    src: url(fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: barlowSemi;
+    src: url(fonts/Barlow_Condensed/BarlowCondensed-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: barlowItalic;
+    src: url(fonts/Barlow_Condensed/BarlowCondensed-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: barlowLighter;
+    src: url(fonts/Barlow_Condensed/BarlowCondensed-Light.ttf);
+}
+
+
+body{
+    font-family: barlowRegular;
+}
+
+
+header{
+    background-color: white;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-bottom: solid 2px #226FBD;
+    /*
+    padding-bottom: 5px;
+    
+    */
+}
+
+
+
+.logo-caja{
+    margin-left: 4vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-nav{
+    background-image: url(img/logo-nav.png);
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.nombre-logo{
+    margin-left: 15px;
+    text-align: center;
+    color: #226FBD;
+}
+
+.nav-toggle{
+    color: #226FBD;
+    background-color: none
+    ;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+    color: #226FBD;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+
+.nav-menu {
+    font-family: barlowSemi;
+    font-size: 2em;
+    display: flex;
+    justify-content: right;
+    gap: 5vw;
+    list-style: none;
+    margin-right: 40px;
+}
+
+.nav-menu.item {    
+    margin: 0 10px;
+}
+
+.nav-link:hover{
+    color: orangered;
+}
+
+
+
+
+.banner{
+    height: auto;
+    width: 100%;
+    background: rgb(35,55,130);
+    background: linear-gradient(0deg, rgba(35,55,130,1) 0%, rgba(34,111,189,1) 100%);
+    margin-top: 100px;
+
+    display: flex;    
+    justify-content: center;
+}
+
+
+.banner-left{
+    height: 100%;
+    width: 60%;
+    padding: 0px;
+    display: flexbox;
+    margin-left: 2vw;
+}
+
+.titulo-banner{    
+    color: white;
+    font-family: barlowRegular;
+    text-transform: uppercase;
+}
+
+.centro-texto{
+    font-size: 11vw;
+    padding: 0px;
+    margin: 0px;
+}
+
+.copiado-texto{
+  font-size: 20vw;
+  margin: 0px;
+  margin-top: -6vw;
+  padding: 0px;
+}
+
+.boton-calcule{
+    margin-bottom: 5vh;
+    margin-left: 1vw;
+}
+
+
+.calcule-banner{
+    font-family: barlowItalic;
+    color:white;
+    font-size: 2vw;
+    height: auto;
+    width: auto;
+    background-color: #D66C1D;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+
+    
+    
+    transition: 0.5s;
+}
+
+.calcule-banner:hover{
+    background-color: #c74816;
+}
+
+
+.banner-right{
+    height: 100%;
+    width: 40%;
+}
+
+.descuento-texto{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+    font-family: barlowItalic;
+}
+
+.caja-descripcion{
+    display: flex;
+    justify-content: space-around;
+}
+
+.caja-estudiante{
+    height: 100%;
+    width: 70%;
+}
+
+.estudiante-imagen{
+    background-image: url(img/mujer-leyendo.png);
+    height: 21vw;
+    width: 21vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    mix-blend-mode: multiply
+}
+
+.texto-banner{
+    height: 100%;
+    width: 30%;
+    color: white;
+    text-align: right;
+    font-size: 2vw;
+    margin-top: 10vw;
+    margin-right: 2vw;
+}
+
+.texto-banner p{
+    margin: 0px;
+}
+
+
+.banner-sombra{
+    background-color: #D66C1D;
+    height: 2vh;
+    width: 98%;
+    margin-left: 2vw;
+}
+
+
+.queServ{
+    text-align: center;
+    font-size: 4vw;    
+    margin-top: 5vw;
+    margin-bottom: 4vw;
+}
+
+
+.servicios{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: barlowLighter;
+}
+
+.servicios-cajas{
+    width: 25%;
+}
+
+.servicios-cajas h5{
+    font-size: 2vw;
+    margin-top: 0vw;
+}
+
+.servicios-cajas p{
+    
+    width: 90%;
+    font-size: 2vw;
+    margin: auto;
+    margin-top: -2vw;
+}
+
+
+
+.gran-formato{
+    height: auto;
+    width: 100%;
+    background-color: black;
+    margin: auto;
+    margin-top: 5vw;
+    text-align: center;
+    color: white;
+    padding-bottom: 2vw;
+    transition: 0.5s;
+}
+
+.gran-formato:hover{
+
+   filter: opacity(0.5);
+
+}
+
+.gran-formato h2{
+    margin: 0px;
+    font-size: 12vw;    
+}
+
+.gran-formato p{
+    font-family: barlowItalic;
+    font-size: 3vw;    
+    margin: 0px;
+}
+
+.banner-sombra-dos{
+    background-color: #D66C1D;
+    height: 2vh;
+    width: 98%;
+    margin-left: 2vw;
+}
+
+.otras{
+width: 90%;
+display: flexbox;
+flex-direction: column;
+margin: auto;
+margin-top: 9vw;
+padding: 20px;
+}
+
+
+.otros{
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.otros p{    
+    width: 35vw;
+    font-size: 3vw;  
+    font-family: barlowLighter;
+    margin-left: 2vw;
+    margin-top: 10px;
+}
+
+.otros span{
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-family: barlowSemi;
+    text-shadow: 2px 2px#226FBD;
+}
+
+
+.dos{
+    justify-content: end;
+    text-align: end;    
+    margin-left: 0vw;
+    margin-right: 2vw;
+    margin-top: 7vw;
+}
+
+.dos p{
+    margin-right: 2vw;
+}
+
+
+
+.brindamos{
+    height: auto;
+    width: 100%;
+    background: rgb(35,55,130);
+    background: linear-gradient(0deg, rgba(35,55,130,1) 0%, rgba(34,111,189,1) 100%);
+    font-size: 2vw;
+    color: white;
+    text-align: center;
+    font-family: barlowItalic;
+    margin: auto;
+    margin-top: 100px;
+    padding: 1px 0px 1px 0px;
+}
+
+
+
+#seccion-horarios{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;    
+    margin-top: 5vw;
+    margin-bottom: 8vw;
+    align-items: center;
+    text-align: center;
+
+}
+
+.horarios{
+    padding-right: 12vw;
+    border-right: 10px solid #D66C1D;
+}
+
+.horarios h4{
+    font-family: barlowItalic;
+    font-size: 9vw;
+    margin: 0px;
+}
+
+.horarios p{
+    font-family: barlowLighter;
+    font-size: 4vw;
+    margin: 0px;
+    color: #D66C1D;
+}
+
+.horarios span{
+    font-size: 2vw;
+}
+
+.mapa{
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa div{
+   display: flex;
+   justify-content: center;
+   margin: 0px;
+   height: auto;
+}
+
+.mapa div img{
+    height: 5vw;
+    width: auto;
+    margin-right: 2vw;
+}
+
+.mapa p{
+    font-family: barlowItalic;
+    font-size: 4vw;
+    margin: 0px;
+    margin-bottom: 2vw;
+}
+
+.mapa span{
+    font-size: 2vw;
+}
+
+iframe{
+    height: 20vw;
+    width: 40vw;
+    box-shadow: 5px 10px 18px rgba(86, 39, 0, 0.422);
+}
+
+
+#contacto{
+    height: 30vw;
+    width: 100%;
+    background-color: #226FBD;
+    margin: auto;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+#contacto h2{
+    font-family: barlowItalic;
+    font-size: 10vw;
+    text-align: right;
+    margin: 0px;
+}
+
+#contacto h3{
+    font-size: 3rem;
+    margin: 0px;
+    font-family: barlowLighter;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+    text-align: center;
+}
+
+
+
+#contacto p{
+    font-size: 2vw;
+    text-align: center;
+    font-family: barlowLighter;
+}
+
+
+.contacto-iconos-caja{
+    height: auto;
+    width: 80%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background-color: white;
+    color: #226FBD;
+    text-align: center;    
+    transition: 0.6s;
+    font-size: 2vw;
+    text-decoration: none;
+    font-family: barlowSemi;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;    
+}
+
+.contacto-iconos-caja img{
+    height: 2vw;
+    width: auto;
+    justify-content: left;
+    margin-right: 1rem;
+}
+
+
+    .contacto-iconos-caja:hover{
+        color: white;
+        background-color: #D66C1D;
+    }
+
+
+
+
+.whatsApp{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: 0.3s;
+}
+
+.whatsApp:hover{
+    scale: 1.2;
+}
+
+.whatsApp.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+.footer{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer img{
+    height: 6vw;
+    width: 6vw;
+    margin-right: 3vw;
+}
+
+
+
+.detalle-footer p{
+   margin: 0px;
+   text-align: center;
+}
+
+
+
+
+
+
+
+/* Queri 1400px*/
+
+@media only screen and (max-width: 1200px) {
+    
+    .nav-menu {
+        font-family: barlowSemi;
+        font-size: 2em;
+        display: flex;
+        justify-content: right;
+        gap: 5vw;
+        list-style: none;
+        margin-right: 40px;
+    }
+
+    
+    .caja-descripcion{
+        display: inline-block;
+    }
+
+    .caja-estudiante{
+        height: auto;
+        width: 100%
+    }
+    
+    .estudiante-imagen{
+        background-image: url(img/mujer-leyendo.png);
+        height: 24vw;
+        width: 24vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        mix-blend-mode: multiply;
+        margin-left: 7vw;
+    }
+    
+    .texto-banner{
+        height: 100%;
+        width: 100%;
+        color: white;
+        font-size: 2vw;
+        margin: 0px;
+        margin-left: 5vw;
+        margin-bottom: 2vh;
+        display: flex;
+    }
+
+    .texto-banner p{
+        margin: 1vw;
+    }
+
+
+    #contacto{
+        height: auto;
+        width: 100%;
+        display: inline-block;
+        justify-content: center;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+
+
+    #contacto h2{
+        font-size: 18vw;
+        text-align: center;
+        margin: auto;
+    }
+    
+    #contacto h3{
+        text-align: center;
+        margin-top: 7vw;
+        margin-bottom: 5vw;
+    }
+    
+
+    .contacto-iconos-caja{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        font-size: 5vw;        
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+    
+    .contacto-iconos-caja img{
+        height: 5vw;
+        width: auto;        
+        margin-right: 1vw;
+    }
+    
+    #contacto p{
+        width: 70%;
+        margin: auto;
+        font-size: 4vw;
+        text-align: center;
+    }
+
+
+  }
+
+
+  /* Queri 800px*/
+
+@media only screen and (max-width: 800px) {
+   
+
+    header{
+        height: 62px;
+        border-bottom: solid 2px #226FBD;
+    }
+
+    .nav-toggle{
+        color: #226FBD;
+        background-color: white
+        ;
+        border: none;
+        font-size: 30px;
+        padding: 0 20px;
+        margin-top: -40px;
+        margin-right: 4vw;
+        display: block;
+    }    
+    
+    .logo-nav{
+        height: 60px;
+        width: 60px;
+        margin-top: -40px;
+    }
+   
+    
+    .nombre-logo{
+        display: none;
+    }
+
+
+    .nav-menu {
+        font-size: 8vw;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;        
+        background-color: white;
+        position: fixed;
+        left: 0;
+        top: 62px;
+        margin-top: 0px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 62px);
+        overflow-y: auto;       
+
+        left: 100%;
+        transition: left 0.5s;
+
+    }
+
+    .nav-menu.item {    
+       line-height: 70px;
+    }
+
+    .nav-menu-link:hover, .nav-menu-link_active{
+        color: orangered;
+    }
+
+
+    .nav-menu_visible{
+        left: 0;
+    }
+    
+
+    .nav-toggle:focus:not(:focus-visible){
+        outline: none;
+    }
+
+
+
+
+
+
+
+     
+    .banner{
+        margin-top: 60px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner div{
+        width: 100%;
+        margin: auto;
+    }
+
+    .centro-texto{
+        font-size: 20vw;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .copiado-texto{
+      font-size: 30vw;
+      margin-top: -9vw;
+      margin-bottom: 3vw;
+    }
+
+
+    .boton-calcule{
+        margin: auto;
+    }
+    
+    
+    .calcule-banner{
+        font-size: 6vw;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .banner-right{
+        width: 100%;
+    }
+
+    .descuento-texto{
+        font-size: 7vw;
+    }
+
+    .caja-estudiante{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .estudiante-imagen{
+        height: 60vw;
+        width: 60vw;
+    }
+    
+    .texto-banner{
+        height: 100%;
+        width: 30%;
+        color: white;
+        font-size: 5vw;
+        
+        justify-content: center;
+    }
+    
+    .texto-banner p{
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+
+    .banner-sombra{
+        background-color: #D66C1D;
+        height: 1vh;
+        width: 98%;
+        margin-left: 2vw;
+    }
+
+     
+
+
+    .queServ{
+        text-align: center;
+        font-size: 2rem;    
+        margin-top: 15vw;
+        margin-bottom: 4vw;
+    }
+
+    .servicios-cajas{
+        width: 50%;
+        margin-bottom: 5vh;
+    }
+
+    .servicios-cajas h5{
+        font-size: 7vw;
+        margin-top: 0vw;
+    }
+    
+    .servicios-cajas p{
+        
+        width: 90%;
+        font-size: 5vw;
+        margin: auto;
+        margin-top: -3vh;
+    }
+
+
+    .gran-formato p{
+        font-family: barlowLighter;
+        font-size: 7vw;    
+        margin: auto;
+    }
+    
+    
+
+    .otros{
+        float: none;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .otros p{
+        margin-left: 2vw;
+        margin-top: 5vw;
+        width: 50vw;
+        font-size: 5vw;  
+    }
+
+    .otros span{
+        color: #226FBD;
+        text-shadow: none;
+    }
+
+
+    .dos{
+        float: none;
+        justify-content: center;
+        text-align: center;
+     }
+
+
+     .brindamos{
+        width: auto;
+        font-size: 5vw;        
+        text-align: center;
+        margin-top: -10px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+
+    #seccion-horarios{
+        display: inline-block;
+        justify-content: center;
+        width: 100%;
+        margin-top: 5vw;
+        margin-bottom: 8vw;
+        align-items: center;
+        text-align: center;
+    }
+
+    .horarios{
+        padding-right: 0px;
+        margin-bottom: 45px;
+        border-right: none;
+        padding-bottom: 25px;
+        border-bottom: 10px solid #D66C1D;
+    }
+
+    .horarios h4{
+        font-size: 19vw;
+    }
+    
+    .horarios p{
+        font-size: 9vw;
+    }
+    
+    .horarios span{
+        font-size: 6vw;
+    }
+
+
+        
+    .mapa div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+    
+    .mapa div img{
+        height: 10vw;
+        width: auto;
+        margin-right: 2vw;
+    }
+    
+    .mapa p{
+        font-family: barlowItalic;
+        font-size: 12vw;
+        margin: 0px;
+        margin-bottom: 2vw;
+    }
+    
+    .mapa span{
+        font-size: 4vw;
+    }
+    
+    iframe{
+        height: 60vw;
+        width: 80vw;
+        box-shadow: 5px 10px 18px rgba(86, 39, 0, 0.422);
+    }
+
+
+    
+    
+    
+    
+    
+   
+
+
+   
+     
+ 
+
+  }
